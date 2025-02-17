@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minu Veebileht</title>
+    <link rel="stylesheet" href="stiilid.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Tere tulemast minu veebilehele!</h1>
+            <p>Siit leiad huvitavaid teemasid ja kasulikke nõuandeid.</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#minust">Minust</a></li>
+                <li><a href="#faktid">Huvitavad faktid</a></li>
+                <li><a href="#noanded">Õppimisnõuanded</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="minust" class="container">
+        <h2>Minust</h2>
+        <p>Tere! Mina olen [Sinu Nimi], gümnaasiumi õpilane, kes on huvitatud veebiarendusest. Selle veebilehe tegin kasutades HTML-i, CSS-i ja JavaScripti. See on minu esimene projekt, ja ma loodan, et see meeldib ka teile!</p>
+    </section>
+
+    <section id="faktid" class="container">
+        <h2>Huvitavad faktid</h2>
+        <ul>
+            <li>Eesti on üks maailma kõige vähemalt asustatud riike.</li>
+            <li>Eestis on üle 2000 saare.</li>
+            <li>Eesti keel kuulub soome-ugri keelte hulka.</li>
+        </ul>
+    </section>
+
+    <section id="noanded" class="container">
+        <h2>Õppimisnõuanded</h2>
+        <p>Siin on mõned nõuanded, mis aitavad sul õppida tõhusamalt:</p>
+        <ol>
+            <li>Loo kindel õppimise ajakava.</li>
+            <li>Puhka piisavalt, et säilitada kontsentreeritumine.</li>
+            <li>Kasuta märkmeid ja diagramme, et paremini mäletada.</li>
+        </ol>
+    </section>
+
+    <section id="kontakt" class="container">
+        <h2>Kontakt</h2>
+        <p>Kui sul on küsimusi või soovid midagi jagada, võta ühendust!</p>
+        <form action="#" method="post">
+            <label for="nimi">Nimi:</label>
+            <input type="text" id="nimi" name="nimi" required>
+
+            <label for="email">E-post:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="sõnum">Sõnum:</label>
+            <textarea id="sõnum" name="sõnum" rows="5" required></textarea>
+
+            <button type="submit">Saada</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Minu Veebileht. Kõik õigused kaitstud.</p>
+        </div>
+    </footer>
+</body>
+</html>
