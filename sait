@@ -1,0 +1,64 @@
+<!-- Сайт на тему рыбалки с дизайном в стиле природы -->
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rääkime kalastamisest</title>
+  <style>
+    body { font-family: Georgia, serif; line-height: 2; padding: 30px; background-color: #d4f1f9; color: #2c3e50; }
+    nav { background: #2e7d32; padding: 15px; border-radius: 12px; text-align: center; }
+    button { background-color: #1b5e20; color: white; padding: 12px 24px; margin: 6px; border-radius: 8px; border: none; transition: 0.3s; }
+    button:hover { background-color: #388e3c; transform: scale(1.1); }
+    section { margin: 30px 0; padding: 20px; background: #e8f5e9; border-radius: 10px; border: 2px solid #2e7d32; }
+    footer { text-align: center; padding: 15px; background: #1b5e20; color: white; }
+  </style>
+  <script>
+    function goToPage(pageId) {
+      document.querySelectorAll('section').forEach(sec => sec.style.display = 'none');
+      document.getElementById(pageId).style.display = 'block';
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Kalastus – Looduse ja Rahu Allikas</h1>
+    <nav>
+      <button onclick="goToPage('avaleht')">Avaleht</button>
+      <button onclick="goToPage('varustus')">Varustus</button>
+      <button onclick="goToPage('kohad')">Püügikohad</button>
+      <button onclick="goToPage('noudanded')">Nõuanded</button>
+      <button onclick="goToPage('projekt')">Projekt</button>
+    </nav>
+  </header>
+
+  <section id="avaleht">
+    <h2>Tere tulemast kalastuse maailma!</h2>
+    <p>Kalastamine on rahustav ja samas põnev tegevus, mis ühendab looduse ja traditsioonid. See on suurepärane viis vabas õhus aega veeta ja kogeda veealuse maailma saladusi. Kalastades õpid kannatlikkust ja keskendumist.</p>
+  </section>
+
+  <section id="varustus" style="display:none;">
+    <h2>Kalastusvarustus</h2>
+    <p>Edukas kalapüük algab õigest varustusest. Õngeritv, tamiil ja sobiv lant on kalamehe põhivahendid. Samuti on oluline kaasa võtta kahv ja konksude komplekt. Kvaliteetne varustus tagab parema kalapüügikogemuse.</p>
+  </section>
+
+  <section id="kohad" style="display:none;">
+    <h2>Parimad püügikohad Eestis</h2>
+    <p>Eestis on palju kauneid kalastuspaiku. Peipsi järv on kuulus oma rääbise ja latikasaagi poolest. Emajõgi on ideaalne koht haugipüügiks. Soovijatele meeldib ka Võrtsjärv, kus leidub palju koha.</p>
+  </section>
+
+  <section id="noudanded" style="display:none;">
+    <h2>Kasulikud nõuanded</h2>
+    <p>1. Uurige ilma enne kalale minekut. 2. Valige söödad vastavalt kalaliigile. 3. Austage loodust ja koristage enda järelt. 4. Olge kannatlikud – parimad saagid tulevad ootamatult. 5. Jagage oma kogemusi teistega.</p>
+  </section>
+
+  <section id="projekt" style="display:none;">
+    <h2>Projekti kirjeldus</h2>
+    <p>See veebileht on loodud kooliprojektina HTML-i, CSS-i ja JavaScripti abil. Disain rõhutab kalastuse teemat rohelise ja sinise looduse värvidega. Projekti loomine võttis umbes 8 tundi ja kasutati Visual Studio Code'i.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Kalastusprojekt – Kõik õigused kaitstud</p>
+  </footer>
+</body>
+</html>
